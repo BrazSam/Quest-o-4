@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Questao 4</title>
+  <script>
+    let op = prompt("Digite a operação em simbolo que será usada:");
+    let num1 = parseFloat(prompt("Digite um número:"));
+    let num2 = parseFloat(prompt("Digite mais um número para fazer a operação:"));
+    let resultado;
+
+    switch(op) {
+      case "+":
+        resultado = num1 + num2;
+        break;
+      case "-":
+        resultado = num1 - num2;
+        break;
+      case "*":
+        resultado = num1 * num2;
+        break;
+      case "/":
+        resultado = num1 / num2;
+        break;
+      default:
+        alert("Operação inválida!");
+    }
+
+    if (resultado !== undefined) {
+      alert("Resultado: " + resultado);
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
